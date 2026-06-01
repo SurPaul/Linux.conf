@@ -5,10 +5,10 @@ set -eufo pipefail
 {{ if eq .chezmoi.osRelease.id "debian" "ubuntu" -}}
 
 {{ $packages := list
+      "at"
       "bat"
       "curl"
       "dnsutils"
-      "eza"
       "git"
       "htop"
       "fzf"
